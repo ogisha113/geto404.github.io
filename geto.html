@@ -10,9 +10,6 @@ display:flex;
 align-items:center;
 
 }
- img{
- max-width:center
- }
  #overlay {
   position: fixed;
   display: none;
@@ -27,16 +24,6 @@ align-items:center;
   cursor: pointer;
 }
 
-nav a:hover {
-    background-color: #DEF4C6;
-    color: #1B512D; 
-}
-
-nav a {
-    color: #DEF4C6;
-    text-decoration: none;
-    padding: 6px;
-}
 #slika {
     animation-name: povecaj;
     animation-duration: 3s;
@@ -54,18 +41,6 @@ nav a {
     60% {border-color: yellow;}
     80% {border-color: white;}
 }
-
-    
-}
-#baloni2 {
-    width: 150px;
-    height: 300px;
-    animation-name: baloni;
-    animation-duration: 9s;
-    position: absolute;
-    bottom: 500;
-    right: 25;
-}
 #text{
   position: absolute;
   top: 50%;
@@ -76,10 +51,6 @@ nav a {
   -ms-transform: translate(-50%,-50%);
 }
 
-@keyframes baloni {
-    from {bottom: 105%;}
-    to {bottom: -1000%;}
-}
 
 
 </style>
