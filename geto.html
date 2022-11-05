@@ -171,17 +171,6 @@ function myFunction2() {
   <div id="text">GETO 404</div>
 </div>
 
-<script>
- window.onload = function(event) {
-  document.getElementById("overlay").style.display = "block";
-}
-
-function off() {
-  document.getElementById("overlay").style.display = "none";
-}
-</script>
-
-
 <h1 style="color:white;float:right;font-size:10em">0</h1>
 
 <div class="petar">
@@ -260,7 +249,7 @@ function off() {
 <button onclick="document.location='https://www.instagram.com/nisevic.n/'">Nino</button>
 </div>
 </div>
-<a style="float:right" href="#" class="back-to-top"><img alt="Back to Top" src="http://www.dpm.ftn.uns.ac.rs/templates/dpm_v3.4/images/gototop.png"/></a>
+<a style="float:right" href="#" class="back-to-top"><img alt="Back to Top" src="back.jpg"/></a>
 
 <div class="petar">
   <div class="img-col">
@@ -276,5 +265,19 @@ function off() {
 
 <button style="background-color: #black; border: none;color: black;padding: 5px 32px; text-align: center;text-decoration: none;display: inline-block;font-size: 16px; margin: 4px 2px;cursor: pointer;float:right;width:235px" onclick="myFunction()">Turn On The Light Mode</button>
 <button style="background-color: #black; border: none;color: black;padding: 5px 32px; text-align: center;text-decoration: none;display: inline-block;font-size: 16px; margin: 4px 2px;cursor: pointer;float:center;width:215px"  onclick="myFunction2()">Turn On The Dark Mode</button>
+
+<div id="overlay" onclick="off()">
+  <div id="text">GETO 404</div>
+</div>
+
+<script>
+ window.onload = function(event) {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+</script>
 </body>
 </html>
