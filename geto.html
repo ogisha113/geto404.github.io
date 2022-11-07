@@ -8,8 +8,11 @@
 .petar {
 display:flex;
 align-items:center;
-
 }
+
+ img{
+ max-width:center
+ }
  #overlay {
   position: fixed;
   display: none;
@@ -24,6 +27,16 @@ align-items:center;
   cursor: pointer;
 }
 
+nav a:hover {
+    background-color: #DEF4C6;
+    color: #1B512D; 
+}
+
+nav a {
+    color: #DEF4C6;
+    text-decoration: none;
+    padding: 6px;
+}
 #slika {
     animation-name: povecaj;
     animation-duration: 3s;
@@ -41,6 +54,18 @@ align-items:center;
     60% {border-color: yellow;}
     80% {border-color: white;}
 }
+
+    
+}
+#baloni2 {
+    width: 150px;
+    height: 300px;
+    animation-name: baloni;
+    animation-duration: 9s;
+    position: absolute;
+    bottom: 500;
+    right: 25;
+}
 #text{
   position: absolute;
   top: 50%;
@@ -51,7 +76,14 @@ align-items:center;
   -ms-transform: translate(-50%,-50%);
 }
 
-
+@keyframes baloni {
+    from {bottom: 105%;}
+    to {bottom: -1000%;}
+}
+.backgroundImage{
+width:100%;
+height:100%;
+}
 
 </style>
 </head>
@@ -120,7 +152,7 @@ function myFunction2() {
 
         
         
-       <pre> 
+        
 <div class="petar">
   <div class="img-col">
         <a href="petar.html"><img src="petar.jpg" style="margin:50px;border: 8px solid white;width:150px;height:190px"></a>
@@ -129,11 +161,9 @@ function myFunction2() {
 <div class="text-col">
 <h1  style="color:white">Petar Grbic</h1>
 <p style="color:white">Srednja Ekonomska Skola. Rodjendan: 19.07.2006.  </p>
-<button onclick="document.location='https://www.instagram.com/pgrbiic/'">Petar</button>
+ <a href="https://www.instagram.com/pgrbiic/"><img src="instagram.jpg" style="width:25px;height:30px"></a>   <a href="https://www.youtube.com/channel/UCa91Z9mp05s9VyZfNHQtnYw"><img src="youtube.jpg" style="width:25px;height:30px"></a>
 </div>
 </div>
-
-
 <h1 style="color:white;float:right;font-size:10em">0&nbsp;&nbsp;</h1>
 
 <div class="petar">
@@ -144,8 +174,8 @@ function myFunction2() {
 <div class="text-col">
 <h1 style="color:white">Milica Borovic</h1>
 <p style="color:white">Gimnazija Veljko Petrovic. Rodjendan: 28.12.2006.  </p>
-<button onclick="document.location='https://www.instagram.com/boroviicc/'">Milica</button>
-</div>
+<a href="https://www.instagram.com/boroviicc/"><img src="instagram.jpg" style="width:25px;height:30px"></a>
+</div> 
 </div>
 
 <h1 style="color:white;float:right;font-size:10em">4</h1>
@@ -158,7 +188,7 @@ function myFunction2() {
 <div class="text-col">
 <h1 style="color:white">Andrej Blanusa</h1>
 <p style="color:white">Srednja Ekonomska Skola. Rodjendan: 09.01.2007.  </p>
-<button onclick="document.location='https://www.instagram.com/blanusaa7/'">Andrej</button>
+<a href="https://www.instagram.com/blanusaa7/"><img src="instagram.jpg" style="width:25px;height:30px"></a>
 </div>
 </div>
 
@@ -170,7 +200,7 @@ function myFunction2() {
 <div class="text-col">
 <h1 style="color:white">Tomislav Horvat</h1>
 <p style="color:white">Srednja Tehnicka Skola. Rodjendan: 16.08.2006.  </p>
-<button onclick="document.location='https://www.instagram.com/tom_a_932/'">Tomislav</button>
+<a href="https://www.instagram.com/tom_a_932/"><img src="instagram.jpg" style="width:25px;height:30px"></a>
 </div>
 </div>
 
@@ -182,7 +212,7 @@ function myFunction2() {
 <div class="text-col">
 <h1 style="color:white">Simon Veselinovic</h1>
 <p style="color:white">Srednja Ekonomska Skola. Rodjendan: / 2006.  </p>
-<button onclick="document.location='https://www.instagram.com/veselinoviiicc/'">Simon</button>
+<a href="https://www.instagram.com/veselinoviiicc/"><img src="instagram.jpg" style="width:25px;height:30px"></a>
 </div>
 </div>
 
@@ -196,8 +226,8 @@ function myFunction2() {
 </div>
 <div class="text-col">
 <h1 id="5"style="color:white">Noa Surjan</h1>
-<p  id="6"style="color:white">Srednja Poljoprivredna Skola. Rodjendan: / 2006.  </p>
-<button onclick="document.location='surjan.noa'">Noa</button>
+<p  id="6"style="color:white">Srednja Poljoprivredna Skola. Rodjendan: 27.04.2006.  </p>
+<a href="https://www.instagram.com/surjan.noa/"><img src="instagram.jpg" style="width:25px;height:30px"></a>
 </div>
 </div>
 
@@ -209,7 +239,7 @@ function myFunction2() {
 <div class="text-col">
 <h1 id="1" style="color:white">Nina Nisevic</h1>
 <p id="2" style="color:white">Gimnazija Veljko Petrovic. Rodjendan: 20.07.2006.  </p>
-<button onclick="document.location='https://www.instagram.com/nisevic.n/'">Nino</button>
+<a href="https://www.instagram.com/nisevic.n/"><img src="instagram.jpg" style="width:25px;height:30px"></a>
 </div>
 </div>
 
@@ -221,10 +251,10 @@ function myFunction2() {
 <div class="text-col">
 <h1 id="3" style="color:white">Ognjen Plavsic</h1>
 <p id="4" style="color:white">Srednja Tehnicka Skola. Rodjendan: 09.12.2005.  </p>
-<button onclick="document.location='https://www.instagram.com/Ogn7en/'">Ognjen</button>
+<a href="https://www.instagram.com/Ogn7en/"><img src="instagram.jpg" style="width:25px;height:30px"></a>
 </div>
 </div>
-</pre>
+
 
 
 
@@ -242,8 +272,8 @@ function off() {
   document.getElementById("overlay").style.display = "none";
 }
 </script>
-
 <button style="background-color: #black; border: none;color: black;padding: 5px 0px; text-align: center;text-decoration: none;display: inline-block;font-size: 16px; margin: 4px 2px;cursor: pointer;float:right;width:235px" onclick="myFunction()">Turn On The Light Mode</button>
 <button style="background-color: #black; border: none;color: black;padding: 5px 0px; text-align: center;text-decoration: none;display: inline-block;font-size: 16px; margin: 4px 2px;cursor: pointer;float:center;width:215px"  onclick="myFunction2()">Turn On The Dark Mode</button>
 </body>
 </html>
+
