@@ -1,11 +1,11 @@
 body {
     margin: 0;
     font-family: "Trebuchet MS";
-  background-color: #73E2A7;
+  background-color: #552ffa;
 }
 
 header {
-    background-color: #DEF4C6;
+    background-color: #391cb4;
     color: #1B512D;
     padding: 5px;
     text-align: center;
@@ -13,7 +13,7 @@ header {
 
 nav {
     padding: 6px;
-    background-color: #1B512D;
+    background-color: #36296d;
 }
 
 nav a {
@@ -23,7 +23,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #DEF4C6;
+    background-color: #a39ac9;
     color: #1B512D; 
 }
 
@@ -158,4 +158,3 @@ div {
 }
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
-}
